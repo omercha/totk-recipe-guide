@@ -1,1 +1,0 @@
-import './Reciperard.css';
