@@ -1,2 +1,12 @@
-# totk-recipe-tracker
-Full-stack web app to track recipe completion in The Legend of Zelda: Tears of the Kingdom. Users can mark recipes as completed, filter by ingredients or effects, and track overall progress. Built with React, Node.js, Express, and MongoDB/PostgreSQL.
+# Tears of the Kingdom Recipe Completion Tracker
+Currently working on developing a full-stack web app for users to track recipe completion in The Legend of Zelda: Tears of the Kingdom.
+
+### Planned features:
+- view recipe information such as recipe id, name, and ingredients
+- search/filter recipes by name & ingredients
+- allow users to create accounts which they can use to track which recipes they have completed and which recipes they have left
+
+### Current tech stack:
+- Frontend: React
+- Backend: Node.js and Express
+- Database: MongoDB or PostgreSQL
