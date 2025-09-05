@@ -8,7 +8,6 @@ function RecipeCard({ recipe }) {
       <p className="recipe-id">{recipe.id}</p>
       <img src={recipe.image} alt={recipe.name} />
       <h2 className="recipe-name">{recipe.name}</h2>
-      {/* Optional: Button for more details */}
     </div>
   );
 }
