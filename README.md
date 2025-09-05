@@ -9,4 +9,4 @@ Currently working on developing a full-stack web app for users to track recipe c
 ### Current tech stack:
 - Frontend: React
 - Backend: Node.js and Express
-- Database: MongoDB or PostgreSQL
+- Database: MongoDB or PostgreSQL (tbd)
