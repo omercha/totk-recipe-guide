@@ -17,35 +17,30 @@ const recipes = [
     id: 3,
     name: 'Fish and Mushroom Skewer',
     ingredients: ['Any fish', 'Any mushroom'],
-    effect: null,
     image: 'https://www.zeldadungeon.net/wiki/images/3/33/Fish_and_Mushroom_Skewer_-_TotK_icon.png'
   },
   {
     id: 4,
     name: 'Meat Skewer',
     ingredients: ['Any meat'],
-    effect: null,
     image: 'https://www.zeldadungeon.net/wiki/images/7/78/Meat_Skewer_-_TotK_icon.png'
   },
   {
     id: 5,
     name: 'Fish Skewer',
     ingredients: ['Any fish'],
-    effect: null,
     image: 'https://www.zeldadungeon.net/wiki/images/7/7d/Fish_Skewer_-_TotK_icon.png'
   },
   {
     id: 6,
     name: 'Seafood Skewer',
     ingredients: ['Any snail or crab'],
-    effect: null,
     image: 'https://www.zeldadungeon.net/wiki/images/b/b8/Seafood_Skewer_-_TotK_icon.png'
   },
   {
     id: 7,
     name: 'Copious Meat Skewers',
     ingredients: ['Any four different meat'],
-    effect: null,
     image: 'https://www.zeldadungeon.net/wiki/images/6/65/Copious_Meat_Skewers_-_TotK_icon.png'
   },
   {
@@ -59,8 +54,25 @@ const recipes = [
     id: 9,
     name: 'Steamed Fruit',
     ingredients: ['Any fruit (excluding Hylian tomato)', 'Any vegetable, flower, or herb'],
-    effect: null,
     image: 'https://www.zeldadungeon.net/wiki/images/9/93/Steamed_Fruit_-_TotK_icon.png'
+  },
+  {
+    id: 10,
+    name: 'Steamed Tomatoes',
+    ingredients: ['Hylian tomato', 'Any vegetable, flower, or herb'],
+    image: 'https://www.zeldadungeon.net/wiki/images/0/0f/Steamed_Tomatoes_-_TotK_icon.png'
+  },
+  {
+    id: 11,
+    name: 'Steamed Mushrooms',
+    ingredients: ['Any mushroom', 'Any vegetable, flower, or herb'],
+    image: 'https://www.zeldadungeon.net/wiki/images/1/17/Steamed_Mushrooms_-_TotK_icon.png'
+  },
+  {
+    id: 12,
+    name: 'Steamed Meat',
+    ingredients: ['Any meat', 'Any vegetable, flower, or herb'],
+    image: 'https://www.zeldadungeon.net/wiki/images/f/f1/Steamed_Meat_-_TotK_icon.png'
   }
 ];
 
