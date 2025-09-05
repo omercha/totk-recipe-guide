@@ -4,7 +4,7 @@ Currently working on developing a full-stack web app for users to track recipe c
 ### Planned features:
 - view recipe information such as recipe id, name, and ingredients
 - search/filter recipes by name & ingredients
-- allow users to create accounts which they can use to track which recipes they have completed and which recipes they have left
+- allow users to create accounts which they can use to track completed recipes
 
 ### Current tech stack:
 - Frontend: React
