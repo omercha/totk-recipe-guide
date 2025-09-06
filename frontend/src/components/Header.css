@@ -18,6 +18,7 @@
 }
 
 .nav-buttons {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
   gap: 15px;
 }
