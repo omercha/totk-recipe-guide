@@ -3,7 +3,7 @@
 
 ### Planned features:
 - view recipe information such as recipe id, name, and ingredients
-- search/filter recipes by name & ingredients
+- search/filter recipes by name & id
 - integrating a custom REST API with all recipe information (working on creating one)
 
 ### Current tech stack:
