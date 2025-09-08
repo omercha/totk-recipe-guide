@@ -12,7 +12,7 @@ function Home() {
       <section className="hero-section">
         <h1 className="home-title animated-title">Hyrule Cookbook</h1>
         <p className="home-subtitle animated-subtitle">
-          Lorum ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.
+          A minimalist web app that compiles all recipe information for Tears of the Kingdom and helps you keeps track of your cooking progress. No registration/installation required!
         </p>
         <section className="intro-section">
           <div className="feature-cards">
