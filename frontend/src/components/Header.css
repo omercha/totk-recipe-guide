@@ -1,3 +1,4 @@
+/* Header container styles*/
 .site-header {
   display: flex;
   align-items: center;
@@ -11,18 +12,21 @@
   z-index: 1000;
 }
 
+/* Header content styles */
 .header-content {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
+/* Navigation buttons container styles */
 .nav-buttons {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
   gap: 15px;
 }
 
+/* Navigation links styles */
 .nav-buttons a {
   color: #fff;
   text-decoration: none;
@@ -33,10 +37,12 @@
   font-size: 0.95rem;
 }
 
+/* Navigation links hover effect */
 .nav-buttons a:hover {
-  color: #626161;
+  color: #d6d6d6;
 }
 
+/* Hamburger menu container styles */
 .hamburger-menu {
   display: flex;
   flex-direction: column;
@@ -51,6 +57,7 @@
   margin-right: 15px;
 }
 
+/* Hamburger menu bars (spans) styles */
 .hamburger-menu span {
   display: block;
   width: 100%;
@@ -60,6 +67,7 @@
   transition: background-color 0.3s ease;
 }
 
+/* Hamburger menu bars hover effect */
 .hamburger-menu:hover span {
   background-color: #a6a6a6;
 }
