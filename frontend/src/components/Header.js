@@ -10,7 +10,7 @@ function Header() {
           <span></span>
         </button>
         <nav className="nav-buttons">
-          <a href="/">Homepage</a>
+          <a href="/">Home</a>
           <a href="/recipes">Recipes</a>
           <a href="/tracker">Tracker</a>
         </nav>
