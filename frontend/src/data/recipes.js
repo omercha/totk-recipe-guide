@@ -2,13 +2,7 @@ const recipes = [
   {
     id: 1,
     name: 'Mushroom Skewer',
-    ingredients: [
-        {
-            name: 'Any Mushroom',
-            icon: 'https://www.zeldadungeon.net/wiki/images/d/d7/Hylian_Shroom.png',
-            specifics: ['Hylian Shroom', 'Endura Shroom', 'Stamella Shroom', 'Chillshroom', 'Sunshroom', 'Zapshroom', 'Rushroom', 'Razorshroom', 'Ironshroom', 'Silent Shroom', 'Brightcap']
-        }
-    ],
+    ingredients: ['Any Mushroom'],
     image: 'https://www.zeldadungeon.net/wiki/images/1/1d/Mushroom_Skewer_-_TotK_icon.png'
   },
   {
