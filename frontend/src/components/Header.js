@@ -1,4 +1,5 @@
 import "./Header.css";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -10,9 +11,9 @@ function Header() {
           <span></span>
         </button>
         <nav className="nav-buttons">
-          <a href="/">Home</a>
-          <a href="/recipes">Recipes</a>
-          <a href="/tracker">Tracker</a>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/recipes">Recipes</NavLink>
+          <NavLink to="/tracker">Tracker</NavLink>
         </nav>
       </div>
     </header>
