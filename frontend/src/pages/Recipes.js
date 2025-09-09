@@ -1,46 +1,38 @@
-import recipes from "../data/recipes";
-import "./Recipes.css";
+import React, { useState, useEffect } from 'react';
+import RecipeList from '../components/RecipeList';
 
-function Recipes() {
-  return (
-    <div className="recipes-page">
-      <h1 className="recipes-title"></h1>
-      <div className="recipes-table-container">
-        <table className="recipes-table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Image</th>
-              <th>Name</th>
-              <th>Ingredients</th>
-            </tr>
-          </thead>
-          <tbody>
-            {recipes.map((recipe) => (
-              <tr key={recipe.id}>
-                <td>{recipe.id}</td>
-                <td>
-                  <img
-                    src={recipe.image}
-                    alt={recipe.name}
-                    className="recipe-image"
-                  />
-                </td>
-                <td>{recipe.name}</td>
-                <td>
-                  <ul>
-                    {recipe.ingredients.map((ingredient, idx) => (
-                      <li key={idx}>{ingredient}</li>
-                    ))}
-                  </ul>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  );
-}
+const Recipes = () => {
+  const [recipes, setRecipes] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchRecipes = async () => {
+      try {
+        const baseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+        const apiUrl = `${baseUrl}/api/recipes`;
+        console.log(`Fetching recipes from: ${apiUrl}`);
+
+        const response = await fetch(apiUrl);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        setRecipes(data);
+      } catch (e) {
+        setError(e.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchRecipes();
+  }, []);
+
+  if (loading) return <div>Loading recipes...</div>;
+  if (error) return <div>Error: {error}</div>;
+
+  return <RecipeList recipes={recipes} />;
+};
 
 export default Recipes;
