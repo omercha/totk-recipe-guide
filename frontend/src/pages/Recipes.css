@@ -1,113 +1,17 @@
-@font-face {
-    font-family: 'HyliaSerif';
-    src: url('../assets/fonts/HyliaSerifBeta-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Page container */
 .recipes-page {
-  padding: 20px;
+  padding: 80px 20px 20px;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #adacac, #bdbdbd);
   min-height: 100vh;
-  color: #333;
+  color: #f0f0f0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Table container */
-.recipes-table-container {
-  width: 100%;
-  max-width: 800px;
-  overflow-x: auto;
-  background-color: #f4f4f4;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-/* Table styles */
-.recipes-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 1rem;
-  color: #444;
-}
-
-/* Table header and cell styles */
-.recipes-table th,
-.recipes-table td {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: left;
-  padding: 12px 15px;
-  border-bottom: 1px solid #e0e0e0;
-  vertical-align: top;
-}
-
-.recipes-table tbody tr {
-  border-radius: 6px;
-}
-
-/* Alternate row coloring */
-.recipes-table tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-/* Table header styles */
-.recipes-table th {
-  background-color: #e0e0e0;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #333;
-}
-
-.recipes-table tbody tr:hover {
-  background-color: #e8fff4;
-  transition: background-color 0.2s ease-in-out;
-}
-
-/* Remove border from last row cells */
-.recipes-table tbody tr:last-child td {
-  border-bottom: none;
-}
-
-/* Recipe image styles */
-.recipes-table td img.recipe-image {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  display: block;
-}
-
-/* Ingredients cell styles */
-.recipes-table td.ingredients-cell {
-  padding-left: 0;
-}
-
-/* Ingredients content styles */
-.recipes-table td.ingredients-cell > div {
-  margin-bottom: 6px;
-  line-height: 1.4;
-}
-
-/* Responsive styles for smaller screens */
-@media (max-width: 600px) {
-  /* Adjust padding and font size in table headers and cells */
-  .recipes-table th,
-  .recipes-table td {
-    padding: 10px 8px;
-    font-size: 0.9rem;
-  }
-
-  /* Smaller recipe images */
-  .recipes-table td img.recipe-image {
-    width: 50px;
-    height: 50px;
-  }
+.status-message {
+  font-size: 1.5rem;
+  color: #d0d7e0;
+  margin-top: 50px;
+  font-family: 'HyliaSerif', sans-serif;
 }
