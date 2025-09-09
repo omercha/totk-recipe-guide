@@ -4,9 +4,9 @@
 ### Planned features:
 - view recipe information such as recipe id, name, and ingredients
 - search/filter recipes by name & id
-- integrating a custom REST API with all recipe information (working on creating one)
+- track completion progress
 
 ### Current tech stack:
 - Frontend: React
 - Backend: Node.js and Express
-- Database: tbd
+- Database: MongoDB
