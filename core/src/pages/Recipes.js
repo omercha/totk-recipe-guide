@@ -7,13 +7,11 @@ const Recipes = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // This function now uses the recipeService to fetch local data
     const fetchRecipes = async () => {
       try {
         const data = await getAllRecipes();
         setRecipes(data);
       } catch (e) {
-        // The service already logs the error, so we can just ensure recipes is an empty array
         console.error("An error occurred in the component:", e);
         setRecipes([]);
       } finally {
@@ -22,7 +20,7 @@ const Recipes = () => {
     };
 
     fetchRecipes();
-  }, []); // The empty dependency array ensures this runs only once on mount
+  }, []);
 
   if (loading) return <div>Loading recipes...</div>;
 
