@@ -8,5 +8,3 @@
 
 ### Current tech stack:
 - Frontend: React
-- Backend: Node.js and Express
-- Database: MongoDB

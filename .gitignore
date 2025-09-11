@@ -6,8 +6,7 @@ yarn-error.log*
 
 # Dependencies
 /node_modules
-/frontend/node_modules
-/backend/node_modules
+/core/node_modules
 
 # Environment Variables
 # Ignore all .env files, but not .env.example
@@ -15,9 +14,6 @@ yarn-error.log*
 .env.*
 !.env.example
 
-# Frontend (Create React App)
-/frontend/build
-/frontend/coverage
-
-# Backend
-/backend/.env
+# Core Application (Create React App)
+/core/build
+/core/coverage

@@ -1,36 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import RecipeList from '../components/RecipeList';
+import { getAllRecipes } from '../services/recipeService';
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
+    // This function now uses the recipeService to fetch local data
     const fetchRecipes = async () => {
       try {
-        const baseUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
-        const apiUrl = `${baseUrl}/api/recipes`;
-        console.log(`Fetching recipes from: ${apiUrl}`);
-
-        const response = await fetch(apiUrl);
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
+        const data = await getAllRecipes();
         setRecipes(data);
       } catch (e) {
-        setError(e.message);
+        // The service already logs the error, so we can just ensure recipes is an empty array
+        console.error("An error occurred in the component:", e);
+        setRecipes([]);
       } finally {
         setLoading(false);
       }
     };
 
     fetchRecipes();
-  }, []);
+  }, []); // The empty dependency array ensures this runs only once on mount
 
   if (loading) return <div>Loading recipes...</div>;
-  if (error) return <div>Error: {error}</div>;
 
   return <RecipeList recipes={recipes} />;
 };
