@@ -131,22 +131,22 @@
 }
 
 /* Feature Card Title */
-.feature-card h3 {
+.feature-card h2 {
   font-size: 1.6rem;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin: 0;
   font-weight: 700;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
 }
 
 /* Feature Card Icons */
-.feature-card h3 img.icon,
-.inline-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 6px;
-  vertical-align: text-top;
-  object-fit: contain;
+.feature-card-icon {
+  width: 1.1em;
+  height: 1em;
 }
 
 /* Feature Card Description */
