@@ -1,6 +1,6 @@
 /* Page container */
 .recipes-page {
-  padding: 80px 20px 20px;
+  padding: 100px 20px 20px;
   font-family: Arial, sans-serif;
   min-height: 100vh;
   background: linear-gradient(135deg, #10592e, #2a5298);
@@ -13,7 +13,7 @@
   margin-right: auto;
   width: 100%;
   max-width: 500px;
-  margin-bottom: 30px;
+  margin-bottom: -30px;
 }
 
 .search-input {
@@ -39,4 +39,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 10vh;
 }

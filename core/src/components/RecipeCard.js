@@ -17,10 +17,8 @@ const RecipeCard = ({ recipe }) => {
         <img src={recipe.image} alt={recipe.name} className="recipe-card-image" />
       </div>
       <div className="recipe-card-body">
-        <h3 className="recipe-card-title">
-          <span>{recipe.name}</span>
-          <span>#{recipe.id}</span>
-        </h3>
+        <h3 className="recipe-card-title">{recipe.name}</h3>
+        <span className="recipe-card-id">#{recipe.id}</span>
         <ul className="recipe-card-ingredients">
           {recipe.ingredients.map((ingredient, index) => (
             <li key={index}>{ingredient}</li>
