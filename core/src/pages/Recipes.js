@@ -1,30 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import RecipeList from '../components/RecipeList';
-import { getAllRecipes } from '../services/recipeService';
+import { getAllRecipes } from '../services/RecipeService';
 
-const Recipes = () => {
+function Recipes() {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchRecipes = async () => {
-      try {
-        const data = await getAllRecipes();
-        setRecipes(data);
-      } catch (e) {
-        console.error("An error occurred in the component:", e);
-        setRecipes([]);
-      } finally {
-        setLoading(false);
-      }
-    };
-
+    async function fetchRecipes() {
+      const data = await getAllRecipes();
+      setRecipes(data);
+      setLoading(false);
+    }
     fetchRecipes();
   }, []);
 
   if (loading) return <div>Loading recipes...</div>;
 
   return <RecipeList recipes={recipes} />;
-};
+}
 
 export default Recipes;
