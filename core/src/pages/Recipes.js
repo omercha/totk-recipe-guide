@@ -44,7 +44,11 @@ function Recipes() {
               className="search-input"
             />
           </div>
-          <RecipeList recipes={filteredRecipes} />
+          {filteredRecipes.length > 0 ? (
+            <RecipeList recipes={filteredRecipes} />
+          ) : (
+            <div className="status-message">No results.</div>
+          )}
         </>
       )}
     </div>

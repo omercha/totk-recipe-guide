@@ -1,15 +1,10 @@
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 
-function Header() {
+function Header({ isVisible }) {
   return (
-    <header className="site-header">
+    <header className={`site-header ${isVisible ? '' : 'hidden'}`}>
       <div className="header-content">
-        <button className="hamburger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
         <nav className="nav-buttons">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/recipes">Recipes</NavLink>
