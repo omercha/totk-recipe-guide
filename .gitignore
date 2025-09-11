@@ -9,7 +9,6 @@ yarn-error.log*
 /core/node_modules
 
 # Environment Variables
-# Ignore all .env files, but not .env.example
 .env
 .env.*
 !.env.example
