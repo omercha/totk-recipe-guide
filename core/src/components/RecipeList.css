@@ -1,5 +1,5 @@
 .recipe-list {
-  background-color: lightgrey;
+  background-color: rgb(49, 49, 49);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
